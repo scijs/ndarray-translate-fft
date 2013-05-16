@@ -17,7 +17,7 @@ require("save-pixels")(lena, "png").pipe(process.stdout)
 
 Which produces the following image:
 
-<img src="example/zero.png">
+<img src="https://raw.github.com/mikolalysenko/ndarray-translate-fft/master/example/zero.png">
 
 ndarray-fft can also handle periodic boundary conditions by replacing the `translate` line with the following:
 
@@ -27,7 +27,7 @@ translate.wrap(lena, [100, 180])
 
 This produces the following output:
 
-<img src="example/wrap.png"></img>
+<img src="https://raw.github.com/mikolalysenko/ndarray-translate-fft/master/example/wrap.png"></img>
 
 ## Install
 

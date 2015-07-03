@@ -1,6 +1,6 @@
-var lena = require("luminance")(require("lena"))
+var baboon = require("luminance")(require('baboon-image'))
 var translate = require("../translate.js")
 
-translate(lena, [100, 180])
+translate(baboon, [100, 180])
 
-require("save-pixels")(lena, "png").pipe(process.stdout)
+require("save-pixels")(baboon, "png").pipe(process.stdout)

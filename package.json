@@ -1,32 +1,36 @@
 {
   "name": "ndarray-translate-fft",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Translates ndarrays using sinc interpolation",
   "main": "translate.js",
   "directories": {
     "example": "example",
     "test": "test"
   },
+  "browserify": {
+    "transform": ["cwise"]
+  },
   "dependencies": {
-    "cwise": "~0.1.2",
-    "ndarray": "~0.2.3",
-    "ndarray-fft": "~0.0.2",
-    "ndarray-ops": "~0.1.3",
-    "bit-twiddle": "~0.0.2",
-    "typedarray-pool": "~0.1.1"
+    "cwise": "^1.0.5",
+    "ndarray": "^1.0.18",
+    "ndarray-fft": "^1.0.0",
+    "ndarray-ops": "^1.2.2",
+    "next-pow-2": "^1.0.0",
+    "typedarray-pool": "^1.1.0"
   },
   "devDependencies": {
-    "lena": "~0.0.0",
-    "luminance": "~0.0.0",
-    "save-pixels": "~0.0.1",
-    "tap": "~0.4.3"
+    "baboon-image": "^2.0.0",
+    "luminance": "^1.0.3",
+    "save-pixels": "^2.2.0",
+    "tape": "^4.0.0",
+    "test-fuzzy-array": "^1.0.1"
   },
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tape test/*.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mikolalysenko/ndarray-translate-fft.git"
+    "url": "git://github.com/scijs/ndarray-translate-fft.git"
   },
   "keywords": [
     "ndarray",
@@ -40,7 +44,13 @@
     "wrap"
   ],
   "author": "Mikola Lysenko",
+  "contributors": [
+    "Jasper van de Gronde <th.v.d.gronde@hccnet.nl>"
+  ],
   "license": "MIT",
   "readmeFilename": "README.md",
-  "gitHead": "d23d40a68dfada1abda5947d33da891fb960874a"
+  "gitHead": "d23d40a68dfada1abda5947d33da891fb960874a",
+  "bugs": {
+    "url": "https://github.com/scijs/ndarray-translate-fft/issues"
+  }
 }
